@@ -1,1 +1,1 @@
-web: deno run --allow-net=:${PORT} index.ts --port=${PORT}
+web: deno run --allow-all --import-map import_map.json --unstable src/main.ts --port=${PORT}
